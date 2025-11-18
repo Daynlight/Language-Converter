@@ -17,3 +17,7 @@ set(headers
 add_executable(LanguageConverter ${src})
 target_include_directories(LanguageConverter PUBLIC ${headers})
 
+
+
+
+add_subdirectory(Modules)
