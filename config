@@ -1,0 +1,13 @@
+
+Package
+
+ir: Builders/ir/v1.0.0
+debuilder: Builders/languages/cpp
+builder: Builders/languages/python
+out: Converted/
+
+modules:
+  print
+
+files:
+  ExampleCode/main.cpp

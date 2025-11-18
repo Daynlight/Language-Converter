@@ -4,14 +4,16 @@ project(LanguageConverter LANGUAGES CXX)
 
 set(src
   main.cpp
-  PackageBuilder/PackageBuilder.cpp
+  LanguageBuilder/PackageBuilder/PackageBuilder.cpp
+  LanguageBuilder/ModuleLoader/ModuleLoader.cpp
+  LanguageBuilder/ConfigLoader/ConfigLoader.cpp
 )
 
 
 set(headers
-  PackageBuilder/
+  LanguageBuilder/
 )
 
 add_executable(LanguageConverter ${src})
-include_directories(LanguageConverter PUBLIC ${headers})
+target_include_directories(LanguageConverter PUBLIC ${headers})
 
