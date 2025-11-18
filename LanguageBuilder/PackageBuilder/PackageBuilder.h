@@ -9,11 +9,9 @@ namespace LC{
 class PackageBuilder{
 private:
   LC::ConfigLoader config;
-
+  LC::ModuleLoader modules;
+  
 public:
-  PackageBuilder();
-  ~PackageBuilder();
-
   void run(const std::string &path);
 };
 };

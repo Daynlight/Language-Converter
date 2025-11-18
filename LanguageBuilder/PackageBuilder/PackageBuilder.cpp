@@ -1,13 +1,7 @@
 #include "PackageBuilder.h"
 
-LC::PackageBuilder::PackageBuilder(){
+void LC::PackageBuilder::run(const std::string &path){
+  config.load(path);
 
-};
-
-LC::PackageBuilder::~PackageBuilder() {
-
-};
-
-void LC::PackageBuilder::run(const std::string &path) {
-
+  modules.loadModules(config.getRecords());
 };

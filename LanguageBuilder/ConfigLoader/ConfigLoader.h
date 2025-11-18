@@ -20,10 +20,10 @@ private:
   std::vector<ConfigRecord> records;
 
 public:
-  ConfigLoader();
-  ~ConfigLoader();
-
   void load(const std::string path);
   std::vector<ConfigRecord> getRecords();
+
+  std::vector<LC::ConfigRecord>::iterator begin();
+  std::vector<LC::ConfigRecord>::iterator end();
 };
 };
