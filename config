@@ -10,4 +10,4 @@ modules:
   print
 
 files:
-  ExampleCode/main.cpp
+  Scripts/main.cpp

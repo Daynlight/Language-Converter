@@ -1,0 +1,3 @@
+[submodule "PackageBuilder/vendor/fmt"]
+	path = PackageBuilder/vendor/fmt
+	url = https://github.com/fmtlib/fmt.git
